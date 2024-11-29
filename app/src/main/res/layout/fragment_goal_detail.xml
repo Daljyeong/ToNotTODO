@@ -14,7 +14,6 @@
         android:background="@drawable/bg_top_app_bar"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- TODO: font 설정하기 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -29,7 +28,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- TODO: font 설정하기 -->
     <TextView
         android:id="@+id/tv_goal_detail_title"
         android:layout_width="wrap_content"
@@ -42,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_goal_detail_top_app_bar" />
 
-    <!-- TODO: 이미지 다시 설정하기, margintop 다시 계산하기 -->
+    <!-- TODO: 이미지 다시 설정하기 -->
     <ImageView
         android:id="@+id/iv_goal_detail_seesaw"
         android:layout_width="250dp"
@@ -91,8 +89,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_goal_detail_goal" />
 
-    <!-- TODO: Title 설정하기 -->
-
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -139,7 +135,6 @@
             android:background="@drawable/bg_gray_8"
             android:paddingVertical="11dp">
 
-            <!-- TODO: 10sp 너무 작아서 12sp로 임의 변경 -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,7 +170,6 @@
             android:background="@drawable/bg_gray_8"
             android:paddingVertical="11dp">
 
-            <!-- TODO: 10sp 너무 작아서 12sp로 임의 변경 -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -210,7 +204,6 @@
             android:background="@drawable/bg_gray_8"
             android:paddingVertical="11dp">
 
-            <!-- TODO: 10sp 너무 작아서 12sp로 임의 변경 -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -245,7 +238,6 @@
             android:background="@drawable/bg_gray_8"
             android:paddingVertical="11dp">
 
-            <!-- TODO: 10sp 너무 작아서 12sp로 임의 변경 -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -280,7 +272,6 @@
             android:background="@drawable/bg_gray_8"
             android:paddingVertical="11dp">
 
-            <!-- TODO: 10sp 너무 작아서 12sp로 임의 변경 -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -315,7 +306,6 @@
             android:background="@drawable/bg_gray_8"
             android:paddingVertical="11dp">
 
-            <!-- TODO: 10sp 너무 작아서 12sp로 임의 변경 -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
