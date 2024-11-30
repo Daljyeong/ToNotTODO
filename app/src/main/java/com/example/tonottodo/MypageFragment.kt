@@ -15,7 +15,6 @@ import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.ValueFormatter
 
 class MyPageFragment : Fragment() {
-
     lateinit var binding: FragmentMyPageBinding
 
     override fun onCreateView(
@@ -84,4 +83,5 @@ class MyPageFragment : Fragment() {
             invalidate()
         }
     }
+
 }
