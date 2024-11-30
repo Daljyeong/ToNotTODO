@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/fragment_my_page"
-        android:name="com.example.tonottodo.MyPageFragment"
+        android:name="com.example.tonottodo.MyFragment"
         android:label="MyPage"
-        tools:layout="@layout/fragment_my_page" />
+        tools:layout="@layout/fragment_my" />
 
     <fragment
         android:id="@+id/fragment_add_todo"

@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.example.tonottodo.databinding.FragmentMyPageBinding
+import com.example.tonottodo.databinding.FragmentMyBinding
 import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.BarData
@@ -14,13 +14,13 @@ import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.ValueFormatter
 
-class MyPageFragment : Fragment() {
-    lateinit var binding: FragmentMyPageBinding
+class MyFragment : Fragment() {
+    lateinit var binding: FragmentMyBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        binding = FragmentMyPageBinding.inflate(layoutInflater)
+        binding = FragmentMyBinding.inflate(layoutInflater)
 
         return binding.root
     }
