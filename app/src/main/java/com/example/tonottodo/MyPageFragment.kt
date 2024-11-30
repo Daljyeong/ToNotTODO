@@ -73,6 +73,10 @@ class MyPageFragment : Fragment() {
                         return days.getOrNull(value.toInt()) ?: ""
                     }
                 }
+
+                // 라벨 폰트 설정
+                typeface = resources.getFont(R.font.jua_400)
+                textSize = 12f
             }
 
             // y축 값 표시 비활성화
