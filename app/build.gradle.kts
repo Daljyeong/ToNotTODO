@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.tonottodo"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.tonottodo"
@@ -45,4 +45,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // 마이페이지 BarChart
+    implementation(libs.mpandroidchart)
 }
