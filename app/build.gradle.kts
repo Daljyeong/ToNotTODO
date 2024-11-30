@@ -54,4 +54,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // 마이페이지 BarChart
+    implementation(libs.mpandroidchart)
 }
