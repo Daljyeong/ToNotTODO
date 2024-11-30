@@ -6,8 +6,8 @@
         android:title="홈" />
 
     <item
-        android:id="@+id/fragment_set_goal"
-        android:icon="@drawable/ic_nav_set_goal"
+        android:id="@+id/fragment_goal_setting"
+        android:icon="@drawable/ic_nav_goal_setting"
         android:title="목표 설정" />
 
     <item

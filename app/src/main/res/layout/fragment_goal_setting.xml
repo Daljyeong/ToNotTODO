@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/tv_set_goal"
+        android:id="@+id/tv_goal_setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="목표 설정"
