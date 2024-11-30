@@ -1,12 +1,12 @@
 package com.example.tonottodo
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
-import com.github.mikephil.charting.charts.BarChart
+import androidx.fragment.app.Fragment
+import com.example.tonottodo.databinding.FragmentMyPageBinding
 import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.BarData
@@ -14,19 +14,23 @@ import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.ValueFormatter
 
-class MypageFragment : Fragment() {
+class MyPageFragment : Fragment() {
+
+    lateinit var binding: FragmentMyPageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_mypage, container, false)
+    ): View {
+        binding = FragmentMyPageBinding.inflate(layoutInflater)
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         // barChart
-        val barChart = view.findViewById<BarChart>(R.id.barChart_mypage)
+        val barChart = binding.barChartMypage
 
         // barChart에 표시할 데이터 (우선 더미값으로 설정해둠. 추후 데이터 불러와서 y만 수정 필요)
         val entries = listOf(
