@@ -34,6 +34,11 @@ class GoalDetailFragment : Fragment() {
         val redCheck = ContextCompat.getColor(requireContext(), R.color.red)
         val grayCheck = ContextCompat.getColor(requireContext(), R.color.gray_500)
 
+        val todos = listOf(binding.clTodo1, binding.clTodo2, binding.clTodo3)
+        val notTodos = listOf(binding.clNotTodo1, binding.clNotTodo2, binding.clNotTodo3)
+        val todoIcons = listOf(binding.ivTodo1, binding.ivTodo2, binding.ivTodo3)
+        val notTodoIcons = listOf(binding.ivNotTodo1, binding.ivNotTodo2, binding.ivNotTodo3)
+
         fun setClickListener(
             container: ConstraintLayout,
             icon: ImageView,
@@ -51,15 +56,39 @@ class GoalDetailFragment : Fragment() {
                     icon.setColorFilter(activeColor)
                 }
                 container.tag = !isActive
+                updateSeesawImage()
             }
         }
 
-        setClickListener(binding.clTodo1, binding.ivTodo1, greenBG, greenCheck)
-        setClickListener(binding.clTodo2, binding.ivTodo2, greenBG, greenCheck)
-        setClickListener(binding.clTodo3, binding.ivTodo3, greenBG, greenCheck)
+        todos.zip(todoIcons).forEach { (container, icon) ->
+            setClickListener(container, icon, greenBG, greenCheck)
+        }
 
-        setClickListener(binding.clNotTodo1, binding.ivNotTodo1, redBG, redCheck)
-        setClickListener(binding.clNotTodo2, binding.ivNotTodo2, redBG, redCheck)
-        setClickListener(binding.clNotTodo3, binding.ivNotTodo3, redBG, redCheck)
+        notTodos.zip(notTodoIcons).forEach { (container, icon) ->
+            setClickListener(container, icon, redBG, redCheck)
+        }
+
     }
+
+    private fun updateSeesawImage() {
+        val todosChecked = countChecked(listOf(binding.clTodo1, binding.clTodo2, binding.clTodo3))
+        val notTodosChecked =
+            countChecked(listOf(binding.clNotTodo1, binding.clNotTodo2, binding.clNotTodo3))
+
+        // 이미지 파일 이름 형식: img_seesaw_<todosChecked><notTodosChecked>
+        val imageName = "img_seesaw_${todosChecked}$notTodosChecked"
+
+        val drawableId =
+            requireContext().resources.getIdentifier(
+                imageName,
+                "drawable",
+                requireContext().packageName,
+            )
+
+        if (drawableId != 0) {
+            binding.ivGoalDetailSeesaw.setImageResource(drawableId)
+        }
+    }
+
+    private fun countChecked(containers: List<ConstraintLayout>): Int = containers.count { it.tag as? Boolean == true }
 }

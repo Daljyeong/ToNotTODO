@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".GoalDetailFragment">
 
-    <!-- TODO: 길이 넘칠듯 .. 스크롤되게 하기~ -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_goal_detail_top_app_bar"
         android:layout_width="match_parent"
@@ -40,13 +39,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_goal_detail_top_app_bar" />
 
-    <!-- TODO: 이미지 다시 설정하기 -->
     <ImageView
         android:id="@+id/iv_goal_detail_seesaw"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="200dp"
+        android:layout_height="260dp"
+        android:scaleType="fitEnd"
         android:layout_marginTop="40dp"
-        android:src="@drawable/seesaw_example"
+        android:src="@drawable/img_seesaw_00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_goal_detail_title" />
