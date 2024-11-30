@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -21,13 +20,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="정말 목표를 종료하시겠어요?"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:gravity="center"
         android:layout_marginBottom="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:text="정말 목표를 종료하시겠어요?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_end_close" />
 
     <TextView
@@ -35,13 +34,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="종료된 목표는 마이페이지에서\n확인할 수 있습니다!"
-        android:textSize="16sp"
-        android:textColor="@color/gray_500"
-        android:gravity="center"
         android:layout_marginBottom="16dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        android:text="종료된 목표는 마이페이지에서\n확인할 수 있습니다!"
+        android:textColor="@color/gray_500"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_end_question" />
 
     <TextView
@@ -52,36 +51,36 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_gray_16"
+        android:gravity="center"
         android:text="취소"
+        android:textAlignment="center"
+        android:textColor="@color/gray_500"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="@color/gray_500"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:background="@drawable/bg_gray_16"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tv_end_end_btn"
-        app:layout_constraintTop_toBottomOf="@id/tv_end_explain"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_end_explain" />
 
     <TextView
         android:id="@+id/tv_end_end_btn"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_green_16"
+        android:gravity="center"
         android:text="종료하기"
+        android:textAlignment="center"
+        android:textColor="@color/main_green"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="@color/main_green"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:background="@drawable/bg_green_16"
-        app:layout_constraintStart_toEndOf="@id/tv_end_cancel_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_end_explain"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toEndOf="@id/tv_end_cancel_btn"
+        app:layout_constraintTop_toBottomOf="@id/tv_end_explain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

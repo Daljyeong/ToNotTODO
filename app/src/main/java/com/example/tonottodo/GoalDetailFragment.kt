@@ -90,5 +90,6 @@ class GoalDetailFragment : Fragment() {
         }
     }
 
-    private fun countChecked(containers: List<ConstraintLayout>): Int = containers.count { it.tag as? Boolean == true }
+    private fun countChecked(containers: List<ConstraintLayout>): Int =
+        containers.count { it.tag as? Boolean == true }
 }
