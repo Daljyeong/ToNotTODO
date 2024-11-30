@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MyFragment">
+    tools:context=".MyPageFragment">
 
     <!-- 상단바 -->
     <!-- TODO: 길이 넘칠듯 .. 스크롤되게 하기~ -->
