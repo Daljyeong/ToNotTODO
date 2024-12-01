@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -30,9 +31,11 @@ class MainActivity : AppCompatActivity() {
     private fun setBottomNaviVisible(navController: NavController) {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             binding.bnvHome.visibility = when (destination.id) {
-                R.id.fragment_home, R.id.fragment_set_goal, R.id.fragment_my_page -> View.VISIBLE
+                R.id.fragment_home, R.id.fragment_goal_setting, R.id.fragment_my_page -> View.VISIBLE
                 else -> View.GONE
             }
         }
+
+
     }
 }

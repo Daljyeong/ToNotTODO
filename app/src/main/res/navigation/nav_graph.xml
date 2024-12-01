@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/fragment_set_goal"
-        android:name="com.example.tonottodo.SetGoalFragment"
+        android:id="@+id/fragment_goal_setting"
+        android:name="com.example.tonottodo.GoalSettingFragment"
         android:label="MyGroup"
-        tools:layout="@layout/fragment_set_goal" />
+        tools:layout="@layout/fragment_goal_setting" />
 
     <fragment
         android:id="@+id/fragment_my_page"
