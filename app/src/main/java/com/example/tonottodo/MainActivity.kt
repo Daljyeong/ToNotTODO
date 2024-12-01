@@ -17,12 +17,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // 임의로 프래그먼트 추가
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.main, GoalSettingFragment())
-                .commit()
-        }
+
 
     }
 }
