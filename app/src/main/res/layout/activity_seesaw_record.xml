@@ -76,7 +76,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/12/6"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -95,7 +95,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -129,7 +129,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/12/5"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -148,7 +148,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -181,7 +181,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/12/4"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -200,7 +200,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -233,7 +233,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/12/3"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -252,7 +252,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -285,7 +285,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/12/2"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -304,7 +304,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -337,7 +337,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/12/1"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -356,7 +356,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -389,7 +389,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/11/30"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -408,7 +408,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -441,7 +441,7 @@
                     android:fontFamily="@font/pretendard_600"
                     android:text="24/11/29"
                     android:textColor="@color/gray_light"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -460,7 +460,7 @@
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
