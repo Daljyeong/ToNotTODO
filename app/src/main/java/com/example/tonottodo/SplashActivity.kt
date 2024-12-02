@@ -26,13 +26,13 @@ class SplashActivity : AppCompatActivity() {
         }
 
         GlobalScope.launch {
-            delay(1000)
+            delay(2000)
             navigateToMain()
         }
     }
 
     private fun navigateToMain() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, ConditionActivity::class.java)
         startActivity(intent)
         finish()
     }

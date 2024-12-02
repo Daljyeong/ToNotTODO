@@ -55,7 +55,7 @@
                     android:text="최근 생성순"
                     android:fontFamily="@font/pretendard_600"
                     android:textColor="@color/gray_light"
-                    android:textSize="10sp"
+                    android:textSize="14sp"
                     app:layout_constraintEnd_toStartOf="@id/iv_home_down"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -100,7 +100,7 @@
                         android:text="킹왕짱 대학생 되기"
                         android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -140,7 +140,7 @@
                         android:text="건강한 식습관 형성하기"
                         android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -180,7 +180,7 @@
                         android:text="갓생 개발자 되기"
                         android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -220,7 +220,7 @@
                         android:text="게임 중독 벗어나기"
                         android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -260,7 +260,7 @@
                         android:text="킹왕짱 헬스인 되기"
                         android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -300,7 +300,7 @@
                         android:text="꼼꼼 인간 되기"
                         android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
-                        android:textSize="10sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
