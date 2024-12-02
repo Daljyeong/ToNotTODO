@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tonottodo.databinding.FragmentMyPageBinding
 import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.XAxis
@@ -27,6 +28,10 @@ class MyPageFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.clMyPageSeesaw1.setOnClickListener {
+            findNavController().navigate(R.id.action_my_page_to_seesaw_record)
+        }
 
         // barChart
         val barChart = binding.barChartMypage

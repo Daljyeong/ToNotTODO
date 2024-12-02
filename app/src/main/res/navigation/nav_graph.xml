@@ -29,7 +29,11 @@
         android:id="@+id/fragment_my_page"
         android:name="com.example.tonottodo.MyPageFragment"
         android:label="MyPage"
-        tools:layout="@layout/fragment_my_page" />
+        tools:layout="@layout/fragment_my_page">
+        <action
+            android:id="@+id/action_my_page_to_seesaw_record"
+            app:destination="@+id/fragment_seesaw_record"/>
+    </fragment>
 
     <fragment
         android:id="@+id/fragment_add_todo"
@@ -60,7 +64,10 @@
 
     </fragment>
 
-
-
+    <fragment
+        android:id="@+id/fragment_seesaw_record"
+        android:name="com.example.tonottodo.SeesawRecordFragment"
+        tools:layout="@layout/fragment_seesaw_record">
+    </fragment>
 </navigation>
 
