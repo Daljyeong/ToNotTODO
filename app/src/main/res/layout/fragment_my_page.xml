@@ -31,8 +31,9 @@
     <!-- 상단바 외의 부분 -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_my_page_top_app_bar">
 
         <LinearLayout
@@ -154,7 +155,6 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <!-- TODO: 추후 시소 박스들 추가하기 -->
             <GridLayout
                 android:id="@+id/gl_my_page"
                 android:layout_width="match_parent"
@@ -162,7 +162,6 @@
                 android:layout_marginTop="14dp"
                 android:columnCount="2"
                 android:rowCount="3"
-
                 app:layout_constraintTop_toBottomOf="@id/cl_my_page_sub_top_bar">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
