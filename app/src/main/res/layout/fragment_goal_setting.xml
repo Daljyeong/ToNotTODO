@@ -90,22 +90,20 @@
             android:background="@null"
             tools:ignore="MissingConstraints" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_green"
-            android:backgroundTint="@color/main_green"
-            android:text="다음"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/cl_goal_setting"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="99dp"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_green"
+        app:backgroundTint="@null"
+        android:text="다음"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/cl_goal_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="99dp"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
