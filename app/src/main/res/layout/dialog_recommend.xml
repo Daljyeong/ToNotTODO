@@ -12,10 +12,11 @@
         android:layout_marginBottom="16dp"
         android:layout_marginTop="44dp"
         android:gravity="center"
-        android:text="오늘 당신은 _한 날이네요!\n_한 날에는\n~를 해보는 것은 어떨까요?"
+        android:fontFamily="@font/jua_400"
+        android:lineSpacingExtra="6sp"
+        android:text="오늘 당신은 행복한 날이네요!\n행복한 날에는\n베이킹을 해보는 것은 어떨까요?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
