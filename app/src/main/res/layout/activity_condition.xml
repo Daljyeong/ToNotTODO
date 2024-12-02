@@ -232,9 +232,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:text="@string/stop_goal"
+        android:text="건너뛰기"
         android:textColor="@color/gray_light"
         android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_condition_next"
         app:layout_constraintEnd_toEndOf="parent"/>
 
