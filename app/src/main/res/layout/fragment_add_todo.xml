@@ -70,7 +70,7 @@
         android:layout_height="62dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="48dp"
-        android:background="@drawable/shape_fill_green_light_8"
+        android:background="@drawable/selector_todo_background"
         app:layout_constraintTop_toBottomOf="@id/tv_add_todo_subtitle">
 
         <ImageView
@@ -90,6 +90,8 @@
             android:layout_marginStart="70dp"
             android:layout_marginEnd="28dp"
             android:background="@null"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/main_green"
             app:layout_constraintBottom_toBottomOf="@id/cl_first_todo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +105,7 @@
         android:layout_height="62dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="22dp"
-        android:background="@drawable/shape_fill_green_light_8"
+        android:background="@drawable/selector_todo_background"
         app:layout_constraintTop_toBottomOf="@id/cl_first_todo">
 
         <ImageView
@@ -123,6 +125,8 @@
             android:layout_marginStart="70dp"
             android:layout_marginEnd="28dp"
             android:background="@null"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/main_green"
             app:layout_constraintBottom_toBottomOf="@id/cl_second_todo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +140,7 @@
         android:layout_height="62dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="22dp"
-        android:background="@drawable/shape_fill_green_light_8"
+        android:background="@drawable/selector_todo_background"
         app:layout_constraintTop_toBottomOf="@id/cl_second_todo">
 
         <ImageView
@@ -156,6 +160,8 @@
             android:layout_marginStart="70dp"
             android:layout_marginEnd="28dp"
             android:background="@null"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/main_green"
             app:layout_constraintBottom_toBottomOf="@id/cl_third_todo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
