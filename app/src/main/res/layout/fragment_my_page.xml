@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/pretendard_600"
-                android:text="최근 7일간 나의 투낫투두 통계"
+                android:text="이번 주 나의 투낫투두 통계"
                 android:textColor="@color/gray_700"
                 android:textSize="18sp" />
 
