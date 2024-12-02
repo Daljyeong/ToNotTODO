@@ -5,13 +5,44 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.tonottodo.databinding.FragmentAddNotTodoBinding
 
 class AddNotTodoFragment : Fragment() {
+
+    private var _binding: FragmentAddNotTodoBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_not_todo, container, false)
+        _binding = FragmentAddNotTodoBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.etFirstNotTodo.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) initNotTodoEditTextSelection(binding.clFirstNotTodo)
+        }
+
+        binding.etSecondNotTodo.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) initNotTodoEditTextSelection(binding.clSecondNotTodo)
+        }
+
+        binding.etThirdNotTodo.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) initNotTodoEditTextSelection(binding.clThirdNotTodo)
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    private fun initNotTodoEditTextSelection(view: View) {
+        listOf(binding.clFirstNotTodo, binding.clSecondNotTodo, binding.clThirdNotTodo).forEach { it.isSelected = false }
+        view.isSelected = true
     }
 }
