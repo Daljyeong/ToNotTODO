@@ -65,8 +65,6 @@ class ConditionActivity : AppCompatActivity() {
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
 
-        dialogBinding.tvRecommendMessage.text = "오늘 당신은 우울한 날이네요!\n우울한 날에는\n산책을 해보는 것은 어떨까요?"
-
         dialogBinding.tvRecommendBtn.setOnClickListener {
             dialog.dismiss()
             val intent = Intent(this, MainActivity::class.java)
