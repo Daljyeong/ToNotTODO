@@ -1,11 +1,16 @@
 package com.example.tonottodo
 
+import android.app.AlertDialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -23,7 +28,36 @@ class GoalDetailFragment : Fragment() {
 
         goalOnClickListeners()
 
+        binding.tvGoalDetailStop.setOnClickListener {
+            showEndDialog()
+        }
+
         return binding.root
+    }
+
+    private fun showEndDialog() {
+        val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_end, null)
+        val dialog = AlertDialog.Builder(requireContext())
+            .setView(dialogView)
+            .create()
+
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+
+        dialog.show()
+        dialog.window?.setLayout(
+            resources.displayMetrics.widthPixels - 52.dpToPx(),
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        )
+
+        dialogView.findViewById<TextView>(R.id.tv_end_cancel_btn)?.setOnClickListener {
+            dialog.dismiss()
+        }
+    }
+
+    private fun Int.dpToPx(): Int {
+        val density = resources.displayMetrics.density
+        return (this * density).toInt()
     }
 
     private fun goalOnClickListeners() {
