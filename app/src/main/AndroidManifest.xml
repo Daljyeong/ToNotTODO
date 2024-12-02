@@ -16,8 +16,9 @@
             android:name=".SeesawRecordActivity"
             android:exported="false" />
         <activity
-            android:name=".ConditionActivity"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ConditionActivity"
             android:exported="false">
 
         </activity>
