@@ -47,13 +47,13 @@ class GoalSettingFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.clGoalSetting.setOnFocusChangeListener { _, hasFocus ->
+        binding.etGoalSetting.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) initTodoEditTextSelection(binding.clGoalSetting)
         }
 
     }
     private fun initTodoEditTextSelection(view: View) {
-        (binding.clGoalSetting as ViewGroup).forEach { it.isSelected = false }
+        (binding.clGoalSetting).forEach { it.isSelected = false }
         view.isSelected = true
     }
 
