@@ -36,13 +36,13 @@ class ConditionActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val ivConditionFace5 = findViewById<ImageView>(R.id.iv_condition_face_5)
-        val ivNumGray5 = findViewById<ImageView>(R.id.iv_num_gray_5)
 
-        ivConditionFace5.setOnClickListener {
-            // Tint Color로 색상 변경
-            val tintColor = ColorStateList.valueOf(Color.parseColor("#EF9595"))
-            ivNumGray5.imageTintList = tintColor
+        //컨디션=5점, 기분=4점만 클릭해!!
+        binding.ivConditionFace5.setOnClickListener {
+            binding.ivNumGray5.imageTintList = ColorStateList.valueOf(Color.parseColor("#EF9595"))
+        }
+        binding.ivMoodFace4.setOnClickListener {
+            binding.ivMoodNum4.imageTintList = ColorStateList.valueOf(Color.parseColor("#FFB187"))
         }
 
         binding.btnConditionNext.setOnClickListener {
