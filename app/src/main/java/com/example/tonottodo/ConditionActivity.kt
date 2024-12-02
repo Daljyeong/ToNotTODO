@@ -1,18 +1,16 @@
 package com.example.tonottodo
 
 
-import android.content.res.ColorStateList
-import android.os.Bundle
-import android.widget.ImageView
 import android.app.AlertDialog
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.Window
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -43,7 +41,7 @@ class ConditionActivity : AppCompatActivity() {
 
         ivConditionFace5.setOnClickListener {
             // Tint Color로 색상 변경
-            val tintColor = ColorStateList.valueOf(android.graphics.Color.parseColor("#EF9595"))
+            val tintColor = ColorStateList.valueOf(Color.parseColor("#EF9595"))
             ivNumGray5.imageTintList = tintColor
         }
 
