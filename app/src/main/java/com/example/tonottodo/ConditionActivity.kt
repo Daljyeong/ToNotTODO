@@ -48,6 +48,12 @@ class ConditionActivity : AppCompatActivity() {
         binding.btnConditionNext.setOnClickListener {
             showRecommendDialog()
         }
+
+        binding.tvConditionSkip.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun showRecommendDialog() {

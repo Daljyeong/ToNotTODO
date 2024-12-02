@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tonottodo.databinding.FragmentAddNotTodoBinding
 
 class AddNotTodoFragment : Fragment() {
@@ -33,6 +34,10 @@ class AddNotTodoFragment : Fragment() {
 
         binding.etThirdNotTodo.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) initNotTodoEditTextSelection(binding.clThirdNotTodo)
+        }
+
+        binding.cdBtnApply.setOnClickListener {
+            findNavController().navigate(R.id.action_add_not_todo_to_home)
         }
     }
 

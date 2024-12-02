@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tonottodo.databinding.FragmentAddTodoBinding
 
 class AddTodoFragment : Fragment() {
@@ -33,6 +34,10 @@ class AddTodoFragment : Fragment() {
 
         binding.etThirdTodo.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) initTodoEditTextSelection(binding.clThirdTodo)
+        }
+
+        binding.cdBtnNext.setOnClickListener {
+            findNavController().navigate(R.id.action_add_todo_to_add_not_todo)
         }
     }
 

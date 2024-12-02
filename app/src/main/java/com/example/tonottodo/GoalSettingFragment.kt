@@ -1,6 +1,5 @@
 package com.example.tonottodo
 
-import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.Spannable
@@ -12,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tonottodo.databinding.FragmentGoalSettingBinding
 
 
@@ -34,6 +34,10 @@ class GoalSettingFragment : Fragment() {
             binding.etGoalSetting.isClickable = true
             binding.etGoalSetting.isEnabled = true
             binding.etGoalSetting.requestFocus()
+        }
+
+        binding.btnGoalSettingNext.setOnClickListener {
+            findNavController().navigate(R.id.action_goal_setting_to_add_todo)
         }
 
         //입력한 문쟈갸 없으면 버튼이 활성화되지 않도록 설정
