@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
             android:paddingBottom="12dp"
+            android:fontFamily="@font/pretendard_600"
             android:text="나의 시소"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="최근 생성순"
+                    android:fontFamily="@font/pretendard_600"
                     android:textColor="@color/gray_light"
                     android:textSize="10sp"
                     app:layout_constraintEnd_toStartOf="@id/iv_home_down"
@@ -68,6 +70,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <GridLayout
+                android:id="@+id/gl_home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
@@ -77,6 +80,7 @@
                 app:layout_constraintTop_toBottomOf="@id/cl_home_sub_top_bar">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_home_seesaw1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="0"
@@ -94,6 +98,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
                         android:text="킹왕짱 대학생 되기"
+                        android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
                         android:textSize="10sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -101,11 +106,12 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/iv_home_seesaw1"
                         android:layout_width="123dp"
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_no_bg"
+                        android:src="@drawable/img_seesaw_21"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -114,6 +120,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_home_seesaw2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="0"
@@ -130,7 +137,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
-                        android:text="킹왕짱 대학생 되기"
+                        android:text="건강한 식습관 형성하기"
+                        android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
                         android:textSize="10sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -138,11 +146,12 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/iv_home_seesaw2"
                         android:layout_width="123dp"
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_no_bg"
+                        android:src="@drawable/img_seesaw_33"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -151,6 +160,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_home_seesaw3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="1"
@@ -167,7 +177,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
-                        android:text="킹왕짱 대학생 되기"
+                        android:text="갓생 개발자 되기"
+                        android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
                         android:textSize="10sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -175,11 +186,12 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/iv_home_seesaw3"
                         android:layout_width="123dp"
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_no_bg"
+                        android:src="@drawable/img_seesaw_30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -188,6 +200,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_home_seesaw4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="1"
@@ -204,7 +217,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
-                        android:text="킹왕짱 대학생 되기"
+                        android:text="게임 중독 벗어나기"
+                        android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
                         android:textSize="10sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -212,11 +226,12 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/iv_home_seesaw4"
                         android:layout_width="123dp"
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_no_bg"
+                        android:src="@drawable/img_seesaw_13"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -225,6 +240,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_home_seesaw5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="2"
@@ -241,7 +257,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
-                        android:text="킹왕짱 대학생 되기"
+                        android:text="킹왕짱 헬스인 되기"
+                        android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
                         android:textSize="10sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -249,11 +266,12 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/iv_home_seesaw5"
                         android:layout_width="123dp"
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_no_bg"
+                        android:src="@drawable/img_seesaw_03"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -262,6 +280,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_home_seesaw6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_row="2"
@@ -278,7 +297,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="13dp"
-                        android:text="킹왕짱 대학생 되기"
+                        android:text="꼼꼼 인간 되기"
+                        android:fontFamily="@font/pretendard_700"
                         android:textColor="@color/gray_700"
                         android:textSize="10sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -286,11 +306,12 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/iv_home_seesaw6"
                         android:layout_width="123dp"
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_no_bg"
+                        android:src="@drawable/img_seesaw_22"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
