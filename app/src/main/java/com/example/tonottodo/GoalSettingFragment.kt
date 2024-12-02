@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.core.view.forEach
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.tonottodo.databinding.FragmentGoalSettingBinding
@@ -29,7 +30,7 @@ class GoalSettingFragment : Fragment() {
 
         binding.clGoalSetting.setOnClickListener{
             //박스 테두리 추가
-            it.setBackgroundResource(R.drawable.bg_green_9)
+            //binding.clGoalSetting.setBackgroundResource(R.drawable.bg_green_9)
             //editText 클릭 가능 & 입력 가능하게 변경
             binding.etGoalSetting.isClickable = true
             binding.etGoalSetting.isEnabled = true
@@ -43,6 +44,17 @@ class GoalSettingFragment : Fragment() {
         //입력한 문쟈갸 없으면 버튼이 활성화되지 않도록 설정
         setupEditText()
         return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.clGoalSetting.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) initTodoEditTextSelection(binding.clGoalSetting)
+        }
+
+    }
+    private fun initTodoEditTextSelection(view: View) {
+        (binding.clGoalSetting as ViewGroup).forEach { it.isSelected = false }
+        view.isSelected = true
     }
 
     private fun setupEditText() {
