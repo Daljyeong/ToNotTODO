@@ -68,6 +68,9 @@
         android:id="@+id/fragment_seesaw_record"
         android:name="com.example.tonottodo.SeesawRecordFragment"
         tools:layout="@layout/fragment_seesaw_record">
+        <action
+            android:id="@+id/action_seesaw_record_to_goal_detail"
+            app:destination="@+id/fragment_goal_detail"/>
     </fragment>
 </navigation>
 
