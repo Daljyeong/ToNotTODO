@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.core.view.forEach
 import androidx.fragment.app.Fragment
 import com.example.tonottodo.databinding.FragmentGoalSettingBinding
 
@@ -39,6 +40,18 @@ class GoalSettingFragment : Fragment() {
         //입력한 문쟈갸 없으면 버튼이 활성화되지 않도록 설정
         setupEditText()
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.etGoalSetting.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) initTodoEditTextSelection(binding.clGoalSetting)
+        }
+
+    }
+    private fun initTodoEditTextSelection(view: View) {
+        binding.clGoalSetting.forEach { it.isSelected = false }
+        view.isSelected = true
     }
 
     private fun setupEditText() {
