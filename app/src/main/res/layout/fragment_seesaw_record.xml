@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SeesawRecordActivity">
+    android:background="@color/white"
+    tools:context=".SeesawRecordFragment">
 
     <!-- 상단바 -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,19 +15,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bg_top_app_bar"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/btn_record_back"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="12dp"
-            android:background="@null"
-            android:src="@drawable/ic_round_arrow_back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_record_title"
@@ -79,6 +67,7 @@
                     android:textSize="14sp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_seesaw1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -160,7 +149,7 @@
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_21"
+                        android:src="@drawable/img_seesaw_30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -213,7 +202,7 @@
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_21"
+                        android:src="@drawable/img_seesaw_33"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -266,7 +255,7 @@
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_21"
+                        android:src="@drawable/img_seesaw_01"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -319,7 +308,7 @@
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_21"
+                        android:src="@drawable/img_seesaw_00"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -372,7 +361,7 @@
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_21"
+                        android:src="@drawable/img_seesaw_12"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -425,7 +414,7 @@
                         android:layout_height="133dp"
                         android:layout_marginTop="28dp"
                         android:layout_marginBottom="11dp"
-                        android:src="@drawable/img_seesaw_21"
+                        android:src="@drawable/img_seesaw_11"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
