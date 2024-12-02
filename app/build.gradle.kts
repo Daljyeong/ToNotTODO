@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.tonottodo"
-    //compileSdk = 35
+    compileSdk = 35
     //compileSdkVersion(35)
 
     defaultConfig {
@@ -16,6 +16,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {
@@ -43,10 +47,16 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
     //implementation ("androidx.core:core-ktx:1.6.0") // 이전 버전으로 변경
     //implementation ("androidx.core:core:1.6.0") // 이전 버전으로 변경
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // 마이페이지 BarChart
+    implementation(libs.mpandroidchart)
 }
