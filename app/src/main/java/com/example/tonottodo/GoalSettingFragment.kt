@@ -30,7 +30,7 @@ class GoalSettingFragment : Fragment() {
 
         binding.clGoalSetting.setOnClickListener{
             //박스 테두리 추가
-            it.setBackgroundResource(R.drawable.bg_green_9)
+            //binding.clGoalSetting.setBackgroundResource(R.drawable.bg_green_9)
             //editText 클릭 가능 & 입력 가능하게 변경
             binding.etGoalSetting.isClickable = true
             binding.etGoalSetting.isEnabled = true
@@ -41,16 +41,15 @@ class GoalSettingFragment : Fragment() {
         setupEditText()
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.etGoalSetting.setOnFocusChangeListener { _, hasFocus ->
+        binding.clGoalSetting.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) initTodoEditTextSelection(binding.clGoalSetting)
         }
 
     }
     private fun initTodoEditTextSelection(view: View) {
-        binding.clGoalSetting.forEach { it.isSelected = false }
+        (binding.clGoalSetting as ViewGroup).forEach { it.isSelected = false }
         view.isSelected = true
     }
 
