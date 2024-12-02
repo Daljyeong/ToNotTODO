@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".GoalDetailFragment">
+    tools:context=".GoalDetailFragment"
+    android:background="@color/white">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +29,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- TODO: font 설정하기 && 투낫투두 색상 다르게-->
     <TextView
         android:id="@+id/tv_goal_detail_title"
         android:layout_width="wrap_content"
@@ -37,6 +36,8 @@
         android:layout_marginTop="28dp"
         android:text="해야 할 일과 하지 말아야 할 일,\n일상 속 균형을 투낫투두가 잡아줄게!"
         android:textSize="24sp"
+        android:fontFamily="@font/jua_400"
+        android:lineSpacingExtra="6sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_goal_detail_top_app_bar" />
@@ -51,17 +52,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_goal_detail_title" />
-
     <TextView
         android:id="@+id/tv_goal_detail_stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="나의 건강하고 균형 잡힌 삶을 위한\n 목표를 입력해주세요"
+        android:text="나의 건강하고 균형 잡힌 삶을 위한\n목표를 입력해주세요"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:fontFamily="@font/jua_400"
+        android:lineSpacingExtra="4sp"
         app:layout_constraintStart_toStartOf="@id/tv_goal_detail_title"
-        app:layout_constraintTop_toBottomOf="@id/iv_goal_seesaw" />
+        app:layout_constraintTop_toBottomOf="@id/iv_goal_seesaw"
+        android:layout_marginTop="68dp"/>
 
     <!-- TODO: editText 힌트 문구 수정, padding값 임의설정한거 확인 -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -70,11 +72,10 @@
         android:layout_height="44dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="6dp"
-        android:background="@drawable/bg_green_9"
+        android:background="@drawable/bg_green_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_goal_detail_stop">
-
 
         <EditText
             android:id="@+id/et_goal_setting"
@@ -82,30 +83,33 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@null"
-            android:ems="10"
-            android:hint="목표를 입력하세요"
+            android:hint="15자 이내로 입력해주세요"
+            android:textCursorDrawable="@color/main_green"
+            android:textColor="@color/black"
+            android:maxLength="15"
             android:inputType="textPersonName"
             android:paddingStart="28dp"
             android:paddingTop="13dp"
             android:textSize="14sp"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
     <Button
+        android:id="@+id/btn_goal_setting_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/bg_main_green_8"
+        android:clickable="false"
         android:text="다음"
         android:textStyle="bold"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

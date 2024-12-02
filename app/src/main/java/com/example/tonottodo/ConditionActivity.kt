@@ -1,5 +1,9 @@
 package com.example.tonottodo
 
+
+import android.content.res.ColorStateList
+import android.os.Bundle
+import android.widget.ImageView
 import android.app.AlertDialog
 import android.content.Intent
 import android.graphics.Color
@@ -17,6 +21,8 @@ import com.example.tonottodo.databinding.ActivityConditionBinding
 import com.example.tonottodo.databinding.DialogRecommendBinding
 
 class ConditionActivity : AppCompatActivity() {
+    private var selectedCondition: ImageView? = null
+    private var selectedConditionScore: Int? = null
 
     private lateinit var binding: ActivityConditionBinding
 
@@ -31,6 +37,14 @@ class ConditionActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val ivConditionFace5 = findViewById<ImageView>(R.id.iv_condition_face_5)
+        val ivNumGray5 = findViewById<ImageView>(R.id.iv_num_gray_5)
+
+        ivConditionFace5.setOnClickListener {
+            // Tint Color로 색상 변경
+            val tintColor = ColorStateList.valueOf(android.graphics.Color.parseColor("#EF9595"))
+            ivNumGray5.imageTintList = tintColor
         }
 
         binding.btnConditionNext.setOnClickListener {

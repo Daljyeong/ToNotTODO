@@ -6,8 +6,6 @@ plugins {
 android {
     namespace = "com.example.tonottodo"
     compileSdk = 35
-    //compileSdkVersion(35)
-
 
     defaultConfig {
         applicationId = "com.example.tonottodo"
@@ -21,6 +19,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 
     buildTypes {
@@ -38,9 +37,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
-    }
-    buildFeatures {
-        viewBinding = true
     }
 }
 

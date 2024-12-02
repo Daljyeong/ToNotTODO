@@ -19,8 +19,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"/>
     <TextView
         android:id="@+id/tv_condition_score"
         android:layout_width="wrap_content"
@@ -30,218 +29,202 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/iv_condition_face_5"
-        app:layout_constraintTop_toBottomOf="@id/tv_ment" />
-
+        app:layout_constraintTop_toBottomOf="@id/tv_ment"/>
     <ImageView
         android:id="@+id/iv_condition_face_5"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="35dp"
         android:src="@drawable/ic_condition_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_condition_score"
+        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toStartOf="@id/iv_condition_face_4"
-        app:layout_constraintTop_toBottomOf="@id/tv_condition_score" />
-
+        android:layout_marginEnd="35dp"/>
     <ImageView
         android:id="@+id/iv_condition_face_4"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="35dp"
         android:src="@drawable/ic_condition_4"
+        app:layout_constraintTop_toBottomOf="@id/tv_condition_score"
+        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toStartOf="@id/iv_condition_face_3"
-        app:layout_constraintTop_toBottomOf="@id/tv_condition_score" />
-
+        android:layout_marginEnd="35dp"/>
     <ImageView
         android:id="@+id/iv_condition_face_3"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginTop="14dp"
         android:src="@drawable/ic_condition_3"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_condition_score" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_condition_score"
+        android:layout_marginTop="14dp"/>
     <ImageView
         android:id="@+id/iv_condition_face_2"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="14dp"
         android:src="@drawable/ic_condition_2"
         app:layout_constraintStart_toEndOf="@id/iv_condition_face_3"
-        app:layout_constraintTop_toBottomOf="@id/tv_condition_score" />
-
+        app:layout_constraintTop_toBottomOf="@id/tv_condition_score"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="35dp"/>
     <ImageView
         android:id="@+id/iv_condition_face_1"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="14dp"
         android:src="@drawable/ic_condition_1"
         app:layout_constraintStart_toEndOf="@id/iv_condition_face_2"
-        app:layout_constraintTop_toBottomOf="@id/tv_condition_score" />
-
+        app:layout_constraintTop_toBottomOf="@id/tv_condition_score"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="35dp"/>
     <ImageView
         android:id="@+id/iv_num_gray_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_5"
+        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_5"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_condition_face_5"
-        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_5" />
-
+        android:layout_marginStart="13dp"/>
     <ImageView
         android:id="@+id/iv_num_gray_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_4"
+        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_4"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_condition_face_4"
-        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_4" />
-
+        android:layout_marginStart="13dp"/>
     <ImageView
         android:id="@+id/iv_num_gray_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_3"
+        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_3"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_condition_face_3"
-        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_3" />
+        android:layout_marginStart="13dp"/>
 
     <ImageView
         android:id="@+id/iv_num_gray_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_2"
+        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_2"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_condition_face_2"
-        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_2" />
+        android:layout_marginStart="13dp"/>
 
     <ImageView
         android:id="@+id/iv_num_gray_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_1"
+        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_1"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_condition_face_1"
-        app:layout_constraintTop_toBottomOf="@id/iv_condition_face_1" />
+        android:layout_marginStart="13dp"/>
 
     <TextView
         android:id="@+id/tv_mood_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
         android:text="오늘 당신의 기분은 몇점인가요?"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/iv_condition_face_5"
-        app:layout_constraintTop_toBottomOf="@id/iv_num_gray_5" />
-
+        app:layout_constraintTop_toBottomOf="@id/iv_num_gray_5"
+        android:layout_marginTop="35dp"/>
     <ImageView
         android:id="@+id/iv_mood_face_5"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="35dp"
         android:src="@drawable/ic_mood_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_mood_score"
+        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toStartOf="@id/iv_mood_face_4"
-        app:layout_constraintTop_toBottomOf="@id/tv_mood_score" />
-
+        android:layout_marginEnd="35dp"/>
     <ImageView
         android:id="@+id/iv_mood_face_4"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="35dp"
         android:src="@drawable/ic_mood_4"
+        app:layout_constraintTop_toBottomOf="@id/tv_mood_score"
+        android:layout_marginTop="14dp"
         app:layout_constraintEnd_toStartOf="@id/iv_condition_face_3"
-        app:layout_constraintTop_toBottomOf="@id/tv_mood_score" />
-
+        android:layout_marginEnd="35dp"/>
     <ImageView
         android:id="@+id/iv_mood_face_3"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginTop="14dp"
         android:src="@drawable/ic_mood_3"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_mood_score" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mood_score"
+        android:layout_marginTop="14dp"/>
     <ImageView
         android:id="@+id/iv_mood_face_2"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="14dp"
         android:src="@drawable/ic_mood_2"
         app:layout_constraintStart_toEndOf="@id/iv_mood_face_3"
-        app:layout_constraintTop_toBottomOf="@id/tv_mood_score" />
-
+        app:layout_constraintTop_toBottomOf="@id/tv_mood_score"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="35dp"/>
     <ImageView
         android:id="@+id/iv_mood_face_1"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="14dp"
         android:src="@drawable/ic_mood_1"
         app:layout_constraintStart_toEndOf="@id/iv_mood_face_2"
-        app:layout_constraintTop_toBottomOf="@id/tv_mood_score" />
-
+        app:layout_constraintTop_toBottomOf="@id/tv_mood_score"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="35dp"/>
     <ImageView
         android:id="@+id/iv_mood_num_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_5"
+        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_5"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_mood_face_5"
-        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_5" />
-
+        android:layout_marginStart="13dp"/>
     <ImageView
         android:id="@+id/iv_mood_num_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_4"
+        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_4"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_mood_face_4"
-        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_4" />
-
+        android:layout_marginStart="13dp"/>
     <ImageView
         android:id="@+id/iv_mood_num_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_3"
+        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_3"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_mood_face_3"
-        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_3" />
+        android:layout_marginStart="13dp"/>
 
     <ImageView
         android:id="@+id/iv_mood_num_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_2"
+        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_2"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_mood_face_2"
-        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_2" />
+        android:layout_marginStart="13dp"/>
 
     <ImageView
         android:id="@+id/iv_mood_num_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/ic_num_gray_1"
+        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_1"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/iv_mood_face_1"
-        app:layout_constraintTop_toBottomOf="@id/iv_mood_face_1" />
+        android:layout_marginStart="13dp"/>
 
 
     <TextView
@@ -253,8 +236,7 @@
         android:textColor="@color/gray_light"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@id/btn_condition_next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/btn_condition_next"
@@ -268,7 +250,7 @@
         android:textStyle="bold"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
