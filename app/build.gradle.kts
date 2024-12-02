@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.tonottodo"
-    //compileSdk = 35
+    compileSdk = 35
     //compileSdkVersion(35)
 
 
