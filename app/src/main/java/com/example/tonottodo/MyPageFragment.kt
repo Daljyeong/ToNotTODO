@@ -28,12 +28,16 @@ class MyPageFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initBarChart()
 
         binding.clMyPageSeesaw1.setOnClickListener {
             findNavController().navigate(R.id.action_my_page_to_seesaw_record)
         }
+    }
 
-        // barChart
+
+    // barChart 초기화
+    private fun initBarChart() {
         val barChart = binding.barChartMypage
 
         // barChart에 표시할 데이터 (우선 더미값으로 설정해둠. 추후 데이터 불러와서 y만 수정 필요)
