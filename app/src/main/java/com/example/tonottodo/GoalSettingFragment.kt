@@ -31,6 +31,7 @@ class GoalSettingFragment : Fragment() {
         binding.clGoalSetting.setOnClickListener{
             //박스 테두리 추가
             //binding.clGoalSetting.setBackgroundResource(R.drawable.bg_green_9)
+
             //editText 클릭 가능 & 입력 가능하게 변경
             binding.etGoalSetting.isClickable = true
             binding.etGoalSetting.isEnabled = true
@@ -43,13 +44,24 @@ class GoalSettingFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.clGoalSetting.setOnFocusChangeListener { _, hasFocus ->
+        binding.etGoalSetting.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) initTodoEditTextSelection(binding.clGoalSetting)
+            //updateBackground(binding.clGoalSetting, hasFocus)
         }
 
     }
+    /*private fun updateBackground(view: View, hasFocus: Boolean) {
+        if (hasFocus) {
+            // 포커스를 얻었을 때 테두리 효과 추가
+            view.setBackgroundResource(R.drawable.bg_green_9)
+        } else {
+            // 포커스를 잃었을 때 기본 배경으로 설정
+            view.setBackgroundResource(R.drawable.bg_green_10)
+        }
+    }*/
     private fun initTodoEditTextSelection(view: View) {
-        (binding.clGoalSetting as ViewGroup).forEach { it.isSelected = false }
+        //(binding.clGoalSetting as ViewGroup).forEach { it.isSelected = false }
+        binding.clGoalSetting.isSelected = false
         view.isSelected = true
     }
 
