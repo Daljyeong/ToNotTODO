@@ -11,10 +11,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.tonottodo.databinding.ActivityConditionBinding
 import com.example.tonottodo.databinding.DialogRecommendBinding
 
@@ -26,16 +23,9 @@ class ConditionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
 
         binding = ActivityConditionBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
         //컨디션=5점, 기분=4점만 클릭해!!
         binding.ivConditionFace5.setOnClickListener {
@@ -47,6 +37,12 @@ class ConditionActivity : AppCompatActivity() {
 
         binding.btnConditionNext.setOnClickListener {
             showRecommendDialog()
+        }
+
+        binding.tvConditionSkip.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
@@ -64,8 +60,6 @@ class ConditionActivity : AppCompatActivity() {
             resources.displayMetrics.widthPixels - 72.dpToPx(),
             ViewGroup.LayoutParams.WRAP_CONTENT
         )
-
-        dialogBinding.tvRecommendMessage.text = "오늘 당신은 우울한 날이네요!\n우울한 날에는\n산책을 해보는 것은 어떨까요?"
 
         dialogBinding.tvRecommendBtn.setOnClickListener {
             dialog.dismiss()

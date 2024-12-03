@@ -4,11 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.GridLayout
 import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.tonottodo.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -39,6 +39,10 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
         setupDropdownMenu()
+
+        binding.clHomeSeesaw1.setOnClickListener {
+            findNavController().navigate(R.id.action_goal_detail)
+        }
 
         return binding.root
     }
