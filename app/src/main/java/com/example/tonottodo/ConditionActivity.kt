@@ -29,10 +29,10 @@ class ConditionActivity : AppCompatActivity() {
 
         //컨디션=5점, 기분=4점만 클릭해!!
         binding.ivConditionFace5.setOnClickListener {
-            binding.ivNumGray5.imageTintList = ColorStateList.valueOf(Color.parseColor("#EF9595"))
+            binding.ivNumGray5.imageTintList = ColorStateList.valueOf(Color.parseColor("#F67171"))
         }
         binding.ivMoodFace4.setOnClickListener {
-            binding.ivMoodNum4.imageTintList = ColorStateList.valueOf(Color.parseColor("#FFB187"))
+            binding.ivMoodNum4.imageTintList = ColorStateList.valueOf(Color.parseColor("#FF9D69"))
         }
 
         binding.btnConditionNext.setOnClickListener {
