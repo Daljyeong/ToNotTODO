@@ -16,7 +16,7 @@ class HomeFragment : Fragment() {
     private var isRecentOrder = true
 
     private val recentOrderData = listOf(
-        Pair("킹왕짱 대학생 되기", R.drawable.img_seesaw_21),
+        Pair("킹왕짱 대학생 되기", R.drawable.img_seesaw_00),
         Pair("건강한 식습관 형성하기", R.drawable.img_seesaw_33),
         Pair("갓생 개발자 되기", R.drawable.img_seesaw_30),
         Pair("게임 중독 벗어나기", R.drawable.img_seesaw_13),
@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
     private val balanceOrderData = listOf(
         Pair("건강한 식습관 형성하기", R.drawable.img_seesaw_33),
         Pair("꼼꼼 인간 되기", R.drawable.img_seesaw_22),
-        Pair("킹왕짱 대학생 되기", R.drawable.img_seesaw_21),
+        Pair("킹왕짱 대학생 되기", R.drawable.img_seesaw_00),
         Pair("게임 중독 벗어나기", R.drawable.img_seesaw_13),
         Pair("갓생 개발자 되기", R.drawable.img_seesaw_30),
         Pair("킹왕짱 헬스인 되기", R.drawable.img_seesaw_03)

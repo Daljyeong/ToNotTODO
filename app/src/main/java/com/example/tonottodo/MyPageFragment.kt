@@ -28,7 +28,7 @@ class MyPageFragment : Fragment() {
     )
 
     private val ongoingData = listOf(
-        Seesaw("킹왕짱 대학생 되기", 2, 1, R.drawable.img_seesaw_21), // 밸런스: 2
+        Seesaw("킹왕짱 대학생 되기", 0, 0, R.drawable.img_seesaw_00), // 밸런스: 2
         Seesaw("건강한 식습관 형성하기", 3, 3, R.drawable.img_seesaw_33), // 밸런스: 6
         Seesaw("갓생 개발자 되기", 3, 0, R.drawable.img_seesaw_30), // 밸런스: 0
         Seesaw("게임 중독 벗어나기", 1, 3, R.drawable.img_seesaw_13), // 밸런스: 2
@@ -59,7 +59,7 @@ class MyPageFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initBarChart()
 
-        binding.clMyPageSeesaw1.setOnClickListener {
+        binding.clMyPageSeesaw2.setOnClickListener {
             findNavController().navigate(R.id.action_my_page_to_seesaw_record)
         }
     }
